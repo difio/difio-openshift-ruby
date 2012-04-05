@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Monupco::Openshift::Express::VERSION
   s.authors     = ["Svetlozar Argirov"]
   s.email       = ["zarrro@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/monupco/monupco-openshift-express-ruby"
   s.summary     = %q{monupco.com client for Openshift Express / Ruby applications}
   s.description = %q{monupco.com client for Openshift Express / Ruby applications. See the README for Usage.}
 
