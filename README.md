@@ -6,7 +6,10 @@ Installing on your Openshift Express Ruby application
 
 - Create an account at http://monupco.com
 
-- Create your Ruby application in dotCloud
+- Create your Ruby application in OpenShift
+
+        # Example ruby app
+        rhc app create -a monupcorubytest -t ruby-1.8
 
 - Add a dependency in your application's Gemfile
 
