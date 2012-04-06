@@ -1,5 +1,7 @@
-Ruby client side agent for monupco.com preconfigured for Openshift Express.
+Registration agent for monupco.com, preconfigured for OpenShift / Ruby
+applications.
 
+It compiles a list of installed packages and sends it to monupco.com.
 
 Installing on your Openshift Express Ruby application
 -----------------------------------------------------
@@ -8,8 +10,7 @@ Installing on your Openshift Express Ruby application
 
 - Create your Ruby application in OpenShift
 
-        # Example ruby app
-        rhc app create -a monupcorubytest -t ruby-1.8
+        rhc app create -a myapp -t ruby-1.8
 
 - Add a dependency in your application's Gemfile
 
