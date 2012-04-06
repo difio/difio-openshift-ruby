@@ -24,8 +24,13 @@ Installing on your Openshift Express Ruby application
 
 - Enable the registration script in .openshift/action_hooks/post_deploy
 
-        source $OPENSHIFT_REPO_DIR/data/MONUPCO_SETTINGS
-        bundle exec $OPENSHIFT_GEAR_DIR/repo/vendor/bundle/ruby/1.8/bin/monupco-openshift-express
+        cd $OPENSHIFT_REPO_DIR
+        source data/MONUPCO_SETTINGS
+        bundle exec vendor/bundle/ruby/1.8/bin/monupco-openshift-express
+
+- Run bundle install to install the monupco gems
+
+        bundle install
 
 - Commit your changes
 
