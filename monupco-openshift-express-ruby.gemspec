@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["zarrro@gmail.com"]
   s.homepage    = "http://github.com/monupco/monupco-openshift-express-ruby"
   s.summary     = %q{monupco.com client for Openshift Express / Ruby applications}
-  s.description = File.read('README.md').sub("\n","\\n")
+  s.description = %q{monupco.com client for Openshift Express / Ruby applications. See the README for Usage.}
 
   s.rubyforge_project = "monupco-openshift-express-ruby"
 
