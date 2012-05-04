@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "monupco-openshift-express-ruby/version"
+require "monupco-openshift-ruby/version"
 
 Gem::Specification.new do |s|
-  s.name        = "monupco-openshift-express-ruby"
-  s.version     = Monupco::Openshift::Express::VERSION
+  s.name        = "monupco-openshift-ruby"
+  s.version     = Monupco::Openshift::VERSION
   s.authors     = ["Svetlozar Argirov"]
   s.email       = ["zarrro@gmail.com"]
-  s.homepage    = "http://github.com/monupco/monupco-openshift-express-ruby"
-  s.summary     = %q{monupco.com client for Openshift Express / Ruby applications}
-  s.description = %q{monupco.com client for Openshift Express / Ruby applications. See the README for Usage.}
+  s.homepage    = "http://github.com/monupco/monupco-openshift-ruby"
+  s.summary     = %q{monupco.com client for OpenShift / Ruby applications}
+  s.description = %q{monupco.com client for OpenShift / Ruby applications. See the README for Usage.}
 
-  s.rubyforge_project = "monupco-openshift-express-ruby"
+  s.rubyforge_project = "monupco-openshift-ruby"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

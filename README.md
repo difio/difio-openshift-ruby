@@ -3,7 +3,7 @@ applications.
 
 It compiles a list of installed packages and sends it to monupco.com.
 
-Installing on your Openshift Express Ruby application
+Installing on your OpenShift Ruby application
 -----------------------------------------------------
 
 - Create an account at http://monupco.com
@@ -15,7 +15,7 @@ Installing on your Openshift Express Ruby application
 - Add a dependency in your application's Gemfile
 
         ...
-        gem 'monupco-openshift-express-ruby'
+        gem 'monupco-openshift-ruby'
         ...
 
 - Set your userID in the ./data/MONUPCO_SETTINGS file
@@ -26,7 +26,7 @@ Installing on your Openshift Express Ruby application
 
         cd $OPENSHIFT_REPO_DIR
         source data/MONUPCO_SETTINGS
-        bundle exec vendor/bundle/ruby/1.8/bin/monupco-openshift-express
+        bundle exec vendor/bundle/ruby/1.8/bin/monupco-openshift
 
 - Run bundle install to install the monupco gems
 
