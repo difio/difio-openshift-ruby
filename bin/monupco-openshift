@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require "monupco-openshift-ruby"
-
-Monupco::Openshift.new.cli

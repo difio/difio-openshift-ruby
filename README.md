@@ -1,12 +1,12 @@
-Registration agent for monupco.com, preconfigured for OpenShift / Ruby
+Registration agent for Difio, preconfigured for OpenShift / Ruby
 applications.
 
-It compiles a list of installed packages and sends it to monupco.com.
+It compiles a list of installed packages and sends it to http://www.dif.io.
 
 Installing on your OpenShift Ruby application
 -----------------------------------------------------
 
-- Create an account at http://monupco.com
+- Create an account at http://www.dif.io
 
 - Create your Ruby application in OpenShift
 
@@ -15,30 +15,30 @@ Installing on your OpenShift Ruby application
 - Add a dependency in your application's Gemfile
 
         ...
-        gem 'monupco-openshift-ruby'
+        gem 'difio-openshift-ruby'
         ...
 
-- Set your userID in the ./data/MONUPCO_SETTINGS file
+- Set your userID in the ./data/DIFIO_SETTINGS file
 
-        echo "export MONUPCO_USER_ID=YourUserID"  > ./data/MONUPCO_SETTINGS
+        echo "export DIFIO_USER_ID=YourUserID"  > ./data/DIFIO_SETTINGS
 
 - Enable the registration script in .openshift/action_hooks/post_deploy
 
         cd $OPENSHIFT_REPO_DIR
-        source data/MONUPCO_SETTINGS
-        bundle exec vendor/bundle/ruby/1.8/bin/monupco-openshift
+        source data/DIFIO_SETTINGS
+        bundle exec vendor/bundle/ruby/1.8/bin/difio-openshift
 
-- Run bundle install to install the monupco gems
+- Run bundle install to install the Difio gems
 
         bundle install
 
 - Commit your changes
 
         git add .
-        git commit -m "enable monupco registration"
+        git commit -m "enable Difio registration"
 
 - Then push your application to OpenShift
 
         git push
 
-That's it, you can now check your application statistics at <http://monupco.com>
+That's it, you can now check your application statistics at http://www.dif.io
